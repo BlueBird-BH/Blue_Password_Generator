@@ -4,11 +4,11 @@
 ## Instalación
 **Descargue la última versión**
 ```
-git clone https://github.com/BlueBird-BH/Blue-Password-Generator.git
+git clone https://github.com/BlueBird-BH/Blue_Password_Generator.git
 ```
 **Cambie al directorio de la herramienta**
 ```
-cd Blue-Password-Generator
+cd Blue_Password_Generator
 ```
 **Inicie ‘Blue Password Generator’**
 ```
