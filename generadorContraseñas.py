@@ -1,5 +1,5 @@
 from random import SystemRandom
-from menu import *
+import menu
 
 caracteresNumericos = "1234567890"
 caracteresLetras_mayusculas = "QWERTYUIOPASDFGHJKLZXCVBNM"
@@ -17,14 +17,14 @@ def generadorClaves():
         claveGenerada = claveGenerada + SystemRandom().choice(valoresClave)
         caracteresRestantes -= 1
 
-    mensajeBienvenida()
+    menu.mensajeBienvenida()
     print("╠═→ Esta es la contraseña generada")
     print(f"║   con una longitud de {longitudClave} caracteres → {claveGenerada}\n")
 
 if __name__ == "__main__":
     try:
-        mensajeBienvenida()
+        menu.mensajeBienvenida()
         generadorClaves()
-        enterContinuar()
+        menu.enterContinuar()
     except KeyboardInterrupt:
-        mensajeDespedida()
+        menu.mensajeDespedida()
